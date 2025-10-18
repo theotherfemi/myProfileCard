@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>My Profile Card</title>
+</head>
+<body>
+	<article data-testid="test-profile-card">
+		<section class="profilePicture">
+			<img src="https://ca.slack-edge.com/T09AMR8A9C3-U09LQGTRS4C-9db890dfdc9a-512" alt="my-slack-dp" data-testid="test-user-avatar">
+        </section>
+
+        <h2 class="fullName" data-testid="test-user-name">Olufemi Ajibade</h2>
+
+		<section>
+			<h3 class="title">bio</h3>
+			<p data-testid="test-user-bio">
+				Olufemi is a skilled Frontend Developer with expertise in Html, css and javascript. With a strong foundation in building 
+				dynamic and user-friendly web applications, I'm passionate about creating seamless UI/UX experiences. I have hands-on experience 
+				in building pixel perfect web pages, API integration, and performance optimization.
+			</p>
+		</section>
+
+		<section class="socialLinks">
+			<h3 class="title">socials</h3>
+			<ul data-testid="test-user-social-links">
+				<li>
+					<a href="https://www.facebook.com/share/1AFrSKyrzd/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook">Facebook</a>
+				</li>
+
+				<li>
+					<a href="https://www.instagram.com/olufemi51743?igsh=MTR0NTUyeGN0MHlvcQ==" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-instagram">Instagram</a>
+				</li>
+
+				<li>
+					<a href="https://github.com/theotherfemi" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">Github</a>
+				</li>
+			</ul>
+		</section>
+
+        <section class="hobbies" data-testid="test-user-hobbies">
+            <h3 class="title">hobbies</h3>
+            <ul>
+                <li><p>Coding</p></li>
+                <li><p>Eating</p></li>
+                <li><p>Sleeping</p></li>
+            </ul>
+        </section>
+
+        <section class="hobbies" data-testid="test-user-dislikes">
+            <h3 class="title">dislikes</h3>
+            <ul>
+                <li><p>Dishonesty</p></li>
+                <li><p>Bad hygiene</p></li>
+                <li><p>Pride</p></li>
+            </ul>
+        </section>
+
+		<section>
+            <h3 class="title">current time</h3>
+			<p id="time" data-testid="test-user-time"></p>
+        </section>
+	</article>
+</body>
+<script src="app.js"></script>
+</html>
