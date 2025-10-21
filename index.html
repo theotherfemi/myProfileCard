@@ -8,11 +8,24 @@
 </head>
 <body>
 	<article data-testid="test-profile-card">
+		<header>
+			<h1>Olu<span>femi</span></h1>
+			<button class="hamburger" aria-label="Toggle menu">
+				&#9776;
+			</button>
+
+			<nav class="nav-links">
+				<a href="/" class="activ">home</a>
+				<a href="/about.html">about</a>
+				<a href="/contact.html">contact</a>
+			</nav>
+		</header>
+
 		<section class="profilePicture">
 			<img src="https://ca.slack-edge.com/T09AMR8A9C3-U09LQGTRS4C-9db890dfdc9a-512" alt="my-slack-dp" data-testid="test-user-avatar">
-        </section>
+		</section>
 
-        <h2 class="fullName" data-testid="test-user-name">Olufemi Ajibade</h2>
+		<h2 class="fullName" data-testid="test-user-name">Olufemi Ajibade</h2>
 
 		<section>
 			<h3 class="title">bio</h3>
@@ -40,28 +53,28 @@
 			</ul>
 		</section>
 
-        <section class="hobbies" data-testid="test-user-hobbies">
-            <h3 class="title">hobbies</h3>
-            <ul>
-                <li><p>Coding</p></li>
-                <li><p>Eating</p></li>
-                <li><p>Sleeping</p></li>
-            </ul>
-        </section>
+		<section class="hobbies" data-testid="test-user-hobbies">
+			<h3 class="title">hobbies</h3>
+			<ul>
+				<li><p>Coding</p></li>
+				<li><p>Eating</p></li>
+				<li><p>Sleeping</p></li>
+			</ul>
+		</section>
 
-        <section class="hobbies" data-testid="test-user-dislikes">
-            <h3 class="title">dislikes</h3>
-            <ul>
-                <li><p>Dishonesty</p></li>
-                <li><p>Bad hygiene</p></li>
-                <li><p>Pride</p></li>
-            </ul>
-        </section>
+		<section class="hobbies" data-testid="test-user-dislikes">
+			<h3 class="title">dislikes</h3>
+			<ul>
+				<li><p>Dishonesty</p></li>
+				<li><p>Bad hygiene</p></li>
+				<li><p>Pride</p></li>
+			</ul>
+		</section>
 
 		<section>
-            <h3 class="title">current time</h3>
+			<h3 class="title">current time</h3>
 			<p id="time" data-testid="test-user-time"></p>
-        </section>
+		</section>
 	</article>
 </body>
 <script src="app.js"></script>

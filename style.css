@@ -9,16 +9,62 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	transition: all .5s ease-in-out;
 }
 
 article {
 	max-width: 600px;
+	width: 100%;
 	margin: 30px auto;
 	padding: 20px;
 	border-radius: 20px;
 	box-shadow: 
 					6px 6px 12px rgba(0, 0, 0, 0.3),
 					-6px -6px 12px rgba(255, 255, 255, 0.3);
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 20px;
+	border-bottom: 1px solid rgb(189, 189, 189);
+	padding-bottom: 10px;
+}
+
+h1 span {
+	color: brown;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0 30px;
+}
+
+nav a {
+	text-transform: capitalize;
+	font-size: 17px;
+	font-weight: 500;
+	color: black;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav a:hover, .activ{
+	text-decoration: underline;
+	color: brown;
 }
 
 section {
@@ -29,17 +75,19 @@ section {
 	font-size: 20;
 	margin-block: 8px;
     text-transform: capitalize;
+	color: brown;
 }
 
 .fullName {
     margin-block: 10px 20px;
     text-align: center;
+	color: brown;
 }
 
 .profilePicture {
 	width: 250px;
 	height: 250px;
-	margin: 0 auto 20px;
+	margin: 40px auto 20px;
 }
 
 img {
@@ -56,10 +104,12 @@ li {
 
 a {
     text-decoration: none;
+	color: black;
 }
 
 a:hover {
     text-decoration: underline;
+	color: brown;
 }
 
 p {
@@ -79,4 +129,36 @@ p {
     .profilePicture {
         width: 100%;
     }
+
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		height: 100vh;
+		width: 80vw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #f0f0f0;
+		padding: 2rem 1.5rem;
+		box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+		justify-content: flex-start;
+		align-items: flex-start;
+		transform: translateX(-100%);
+		transition: transform 0.3s ease;
+		pointer-events: none;
+	}
+
+	.nav-links a {
+		margin: 20px 0;
+	}
+
+	.nav-links.active {
+		display: flex;
+		transform: translateX(0);
+      	pointer-events: auto;
+	}
+
+	.hamburger {
+		display: block;
+	}
 }
