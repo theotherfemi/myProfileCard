@@ -21,33 +21,35 @@
 			</nav>
 		</header>
 
+		<h2 class="page-title">Contact Form</h2>
+
 		<form id="contact-form" action="#" novalidate>
-			<div data-testid="test-contact-name">
+			<div>
 				<label for="fullname">full name</label>
-				<input type="text" id="fullname" name="fullname" required />
+				<input type="text" id="fullname" name="fullname" aria-describedby="name-error" data-testid="test-contact-name" required />
 				<span class="error" id="name-error" data-testid="test-contact-error-fullname"></span>
 			</div>
 
-			<div data-testid="test-contact-email">
+			<div>
 				<label for="email">email</label>
-				<input type="email" id="email" name="email" required/>
+				<input type="email" id="email" name="email" aria-describedby="email-error" data-testid="test-contact-email" required/>
 				<span class="error" id="email-error" data-testid="test-contact-error-email"></span>
 			</div>
 
-			<div data-testid="test-contact-subject">
+			<div>
 				<label for="subject">subject</label>
-				<input type="text" id="subject" name="subject" required />
+				<input type="text" id="subject" name="subject" aria-describedby="subject-error" data-testid="test-contact-subject" required />
 				<span class="error" id="subject-error" data-testid="test-contact-error-subject"></span>
 			</div>
 
-			<div data-testid="test-contact-message">
+			<div>
 				<label for="message">Message</label>
-				<textarea id="message" name="message" required ></textarea>
+				<textarea id="message" name="message" aria-describedby="message-error" data-testid="test-contact-message" required ></textarea>
 				<span class="error" id="message-error" data-testid="test-contact-error-message"></span>
 			</div>
 
-			<div data-testid="test-contact-submit" class="btn-block">
-				<button>Submit</button>
+			<div class="btn-block">
+				<button data-testid="test-contact-submit">Submit</button>
 			</div>
 
 			<div id="success-message" class="success-message" data-testid="test-contact-success" hidden>

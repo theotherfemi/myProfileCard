@@ -130,6 +130,12 @@ form {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.page-title {
+	text-align: center;
+	margin: 20px 0;
+	color: brown;
+}
+
 form div {
 	margin-bottom: 1.5rem;
 }
@@ -197,6 +203,20 @@ textarea {
 
 .success-message.show {
     display: block;
+}
+
+/* About */
+main section {
+	margin: 30px 0;
+}
+
+main section h3 {
+	color: brown;
+	margin-bottom: 10px;
+}
+
+.salutation {
+	margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1000px) {
