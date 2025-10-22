@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +14,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	transition: all .5s ease-in-out;
+	font-family: "Roboto", sans-serif;
 }
 
 article {
@@ -117,6 +120,85 @@ p {
 	letter-spacing: 2px;
 }
 
+/* contact form */
+form {
+	max-width: 500px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+	outline: none;
+}
+
+input:focus, 
+textarea:focus {
+	border: 1px solid brown;
+}
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.btn-block button {
+    background-color: brown;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+	width: 100%;
+}
+
+.btn-block button:hover {
+    background-color: rgb(146, 7, 7);
+}
+
+.error {
+	display: block;
+	margin-top: 0.3rem;
+	color: #d93025;
+	font-size: 0.9rem;
+}
+
+.success-message {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem 1.5rem;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    font-size: 1rem;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
+}
+
 @media screen and (max-width: 1000px) {
 	article {
 		width: 100%;
@@ -129,6 +211,10 @@ p {
     .profilePicture {
         width: 100%;
     }
+
+	header h1 {
+		font-size: 24px;
+	}
 
 	.nav-links {
 		display: none;
@@ -146,6 +232,7 @@ p {
 		transform: translateX(-100%);
 		transition: transform 0.3s ease;
 		pointer-events: none;
+		/* opacity: 0; */
 	}
 
 	.nav-links a {
@@ -160,5 +247,15 @@ p {
 
 	.hamburger {
 		display: block;
+	}
+
+	.nav-links a {
+		margin-bottom: 1rem;
+		text-decoration: none;
+		font-size: 1.2rem;
+	}
+
+	form {
+		padding: 2rem 1rem;
 	}
 }
